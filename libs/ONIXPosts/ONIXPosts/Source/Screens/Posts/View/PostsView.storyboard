@@ -18,20 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ORq-1p-rud">
-                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <rect key="frame" x="0.0" y="118" width="390" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8n8-3K-PAs">
+                                <rect key="frame" x="0.0" y="57" width="390" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="9yg-tT-GJP"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8n8-3K-PAs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="25j-iX-uLG"/>
+                            <constraint firstItem="ORq-1p-rud" firstAttribute="top" secondItem="8n8-3K-PAs" secondAttribute="bottom" constant="5" id="3FL-p3-a7r"/>
                             <constraint firstItem="ORq-1p-rud" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="7vi-sg-IKK"/>
-                            <constraint firstItem="ORq-1p-rud" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ypq-Mv-EXQ"/>
+                            <constraint firstItem="8n8-3K-PAs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Bvy-rS-CBK"/>
                             <constraint firstItem="ORq-1p-rud" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Z6V-jw-9Wg"/>
                             <constraint firstItem="ORq-1p-rud" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="srr-eM-nMy"/>
+                            <constraint firstItem="8n8-3K-PAs" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tsE-CC-Gjt"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="8n8-3K-PAs" id="xHw-L1-3fM"/>
                         <outlet property="tableView" destination="ORq-1p-rud" id="x5L-AM-GA3"/>
                     </connections>
                 </viewController>

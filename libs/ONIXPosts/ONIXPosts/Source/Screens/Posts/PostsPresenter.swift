@@ -13,6 +13,7 @@ protocol PostPresenterProtocol {
     func viewDidLoad()
     func getPostByIndex(index: Int) -> Post?
     var postCount: Int { get }
+    func reloadPosts(page: Int)
 }
 
 class PostsPresenter {
@@ -22,6 +23,7 @@ class PostsPresenter {
     var interactor: PostsInteractorProtocol
     var router: PostsRouterProtocol
     var posts: [Post] = []
+    var isLoading = false
     
     init(view: PostsViewProtocol, interactor: PostsInteractorProtocol, router: PostsRouterProtocol) {
         self.view = view
@@ -41,11 +43,19 @@ extension PostsPresenter: PostPresenterProtocol {
     }
     
     func viewDidLoad() {
-        fetchPosts(page: 100)
+        reloadPosts(page: 100)
+    }
+    
+    func reloadPosts(page: Int) {
+        isLoading = true
+        fetchPosts(page: page)
     }
     
     func fetchPosts(page: Int) {
+        view.loaderPosts(show: isLoading)
         interactor.fetchPosts(page: page) { result in
+            self.isLoading = false
+            self.view.loaderPosts(show: self.isLoading)
             switch result {
             case .success(let response):
                 if let data = response.data, let posts = data.posts, !posts.isEmpty {
