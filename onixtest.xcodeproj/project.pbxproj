@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F92AC79290CDDF4007DCA6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AC78290CDDF4007DCA6C /* AppDelegate.swift */; };
+		8F92AC7D290CDDF4007DCA6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AC7C290CDDF4007DCA6C /* ViewController.swift */; };
+		8F92AC82290CDDF5007DCA6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F92AC81290CDDF5007DCA6C /* Assets.xcassets */; };
+		8F92AC85290CDDF5007DCA6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F92AC83290CDDF5007DCA6C /* LaunchScreen.storyboard */; };
+		8F92AC90290CDDF5007DCA6C /* onixtestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AC8F290CDDF5007DCA6C /* onixtestTests.swift */; };
+		8F92AC9A290CDDF5007DCA6C /* onixtestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AC99290CDDF5007DCA6C /* onixtestUITests.swift */; };
+		8F92AC9C290CDDF5007DCA6C /* onixtestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AC9B290CDDF5007DCA6C /* onixtestUITestsLaunchTests.swift */; };
+		8F92ACE8290D9588007DCA6C /* CameraPermissonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92ACE7290D9588007DCA6C /* CameraPermissonViewModel.swift */; };
+		8F92ACEC290D960E007DCA6C /* CameraPermisson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F92ACEB290D960E007DCA6C /* CameraPermisson.storyboard */; };
+		8F92ACEE290D964B007DCA6C /* CameraPermissonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92ACED290D964B007DCA6C /* CameraPermissonViewController.swift */; };
+		8F92ACF1290D9676007DCA6C /* CameraPermissonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92ACF0290D9676007DCA6C /* CameraPermissonBuilder.swift */; };
+		8F92ADB7290DC4B4007DCA6C /* ONIXUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F92ADB6290DC4AE007DCA6C /* ONIXUIKit.framework */; };
+		8F92ADB8290DC4B4007DCA6C /* ONIXUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F92ADB6290DC4AE007DCA6C /* ONIXUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F92ADE6290DC587007DCA6C /* ONIXAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F92ADE5290DC57C007DCA6C /* ONIXAssets.framework */; };
+		8F92ADE7290DC587007DCA6C /* ONIXAssets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F92ADE5290DC57C007DCA6C /* ONIXAssets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F92ADEA290DC840007DCA6C /* ONIXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92ADE9290DC840007DCA6C /* ONIXButton.swift */; };
+		8F92ADF2290EE17A007DCA6C /* NotificationsPermissonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92ADF1290EE17A007DCA6C /* NotificationsPermissonViewModel.swift */; };
+		8F92ADF4290EE195007DCA6C /* NotificationsPermisson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F92ADF3290EE195007DCA6C /* NotificationsPermisson.storyboard */; };
+		8F92ADF6290EE1A3007DCA6C /* NotificationsPermissonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92ADF5290EE1A3007DCA6C /* NotificationsPermissonViewController.swift */; };
+		8F92ADF8290EE23C007DCA6C /* NotificationsPermissonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92ADF7290EE23C007DCA6C /* NotificationsPermissonBuilder.swift */; };
+		8F92AE20290F12FF007DCA6C /* CameraPermissonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AE1F290F12FF007DCA6C /* CameraPermissonRouter.swift */; };
+		8F92AE2A290F1DBA007DCA6C /* LocationPermissonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AE29290F1DBA007DCA6C /* LocationPermissonViewModel.swift */; };
+		8F92AE2C290F1DC9007DCA6C /* LocationPermisson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F92AE2B290F1DC9007DCA6C /* LocationPermisson.storyboard */; };
+		8F92AE2E290F1DD9007DCA6C /* LocationPermissonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AE2D290F1DD9007DCA6C /* LocationPermissonViewController.swift */; };
+		8F92AE30290F2071007DCA6C /* LocationPermissonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AE2F290F2071007DCA6C /* LocationPermissonBuilder.swift */; };
+		8F92AE34290F23D0007DCA6C /* NotificationsPermissonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AE33290F23D0007DCA6C /* NotificationsPermissonRouter.swift */; };
+		8F92AF16290F3CA7007DCA6C /* ONIXPosts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F92AF13290F3C28007DCA6C /* ONIXPosts.framework */; };
+		8F92AF17290F3CA7007DCA6C /* ONIXPosts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F92AF13290F3C28007DCA6C /* ONIXPosts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F92AF19290F3CFA007DCA6C /* LocationPermissonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92AF18290F3CFA007DCA6C /* LocationPermissonRouter.swift */; };
+		8FA263AC290F7C4300F4DBF1 /* ONIXEntites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA263A8290F7C3100F4DBF1 /* ONIXEntites.framework */; };
+		8FA263AD290F7C4300F4DBF1 /* ONIXEntites.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA263A8290F7C3100F4DBF1 /* ONIXEntites.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F92AC8C290CDDF5007DCA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F92AC6D290CDDF4007DCA6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F92AC74290CDDF4007DCA6C;
+			remoteInfo = onixtest;
+		};
+		8F92AC96290CDDF5007DCA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F92AC6D290CDDF4007DCA6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F92AC74290CDDF4007DCA6C;
+			remoteInfo = onixtest;
+		};
+		8F92ADB5290DC4AE007DCA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F92ADB1290DC4AE007DCA6C /* ONIXUIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F92AD74290DBE18007DCA6C;
+			remoteInfo = ONIXUIKit;
+		};
+		8F92ADE4290DC57C007DCA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F92ADE0290DC57C007DCA6C /* ONIXAssets.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F92ADC3290DC508007DCA6C;
+			remoteInfo = ONIXAssets;
+		};
+		8F92AF12290F3C28007DCA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F92AF0D290F3C28007DCA6C /* ONIXPosts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F92AEBB290F382C007DCA6C;
+			remoteInfo = ONIXPosts;
+		};
+		8F92AF14290F3C28007DCA6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F92AF0D290F3C28007DCA6C /* ONIXPosts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8F92AEC5290F382C007DCA6C;
+			remoteInfo = ONIXPostsTests;
+		};
+		8FA263A7290F7C3100F4DBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FA263A2290F7C3100F4DBF1 /* ONIXEntites.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8FA26393290F757000F4DBF1;
+			remoteInfo = ONIXEntites;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F92AD55290DBCAE007DCA6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F92AF17290F3CA7007DCA6C /* ONIXPosts.framework in Embed Frameworks */,
+				8F92ADB8290DC4B4007DCA6C /* ONIXUIKit.framework in Embed Frameworks */,
+				8F92ADE7290DC587007DCA6C /* ONIXAssets.framework in Embed Frameworks */,
+				8FA263AD290F7C4300F4DBF1 /* ONIXEntites.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8F92AC75290CDDF4007DCA6C /* onixtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = onixtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F92AC78290CDDF4007DCA6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F92AC7C290CDDF4007DCA6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F92AC81290CDDF5007DCA6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F92AC84290CDDF5007DCA6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F92AC86290CDDF5007DCA6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F92AC8B290CDDF5007DCA6C /* onixtestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onixtestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F92AC8F290CDDF5007DCA6C /* onixtestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onixtestTests.swift; sourceTree = "<group>"; };
+		8F92AC95290CDDF5007DCA6C /* onixtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = onixtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F92AC99290CDDF5007DCA6C /* onixtestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onixtestUITests.swift; sourceTree = "<group>"; };
+		8F92AC9B290CDDF5007DCA6C /* onixtestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onixtestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8F92ACE7290D9588007DCA6C /* CameraPermissonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissonViewModel.swift; sourceTree = "<group>"; };
+		8F92ACEB290D960E007DCA6C /* CameraPermisson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraPermisson.storyboard; sourceTree = "<group>"; };
+		8F92ACED290D964B007DCA6C /* CameraPermissonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissonViewController.swift; sourceTree = "<group>"; };
+		8F92ACF0290D9676007DCA6C /* CameraPermissonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissonBuilder.swift; sourceTree = "<group>"; };
+		8F92ADB1290DC4AE007DCA6C /* ONIXUIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ONIXUIKit.xcodeproj; path = libs/ONIXUIKit/ONIXUIKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		8F92ADE0290DC57C007DCA6C /* ONIXAssets.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ONIXAssets.xcodeproj; path = libs/ONIXAssets/ONIXAssets.xcodeproj; sourceTree = SOURCE_ROOT; };
+		8F92ADE9290DC840007DCA6C /* ONIXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONIXButton.swift; sourceTree = "<group>"; };
+		8F92ADF1290EE17A007DCA6C /* NotificationsPermissonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissonViewModel.swift; sourceTree = "<group>"; };
+		8F92ADF3290EE195007DCA6C /* NotificationsPermisson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NotificationsPermisson.storyboard; sourceTree = "<group>"; };
+		8F92ADF5290EE1A3007DCA6C /* NotificationsPermissonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissonViewController.swift; sourceTree = "<group>"; };
+		8F92ADF7290EE23C007DCA6C /* NotificationsPermissonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissonBuilder.swift; sourceTree = "<group>"; };
+		8F92AE1F290F12FF007DCA6C /* CameraPermissonRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissonRouter.swift; sourceTree = "<group>"; };
+		8F92AE29290F1DBA007DCA6C /* LocationPermissonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissonViewModel.swift; sourceTree = "<group>"; };
+		8F92AE2B290F1DC9007DCA6C /* LocationPermisson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocationPermisson.storyboard; sourceTree = "<group>"; };
+		8F92AE2D290F1DD9007DCA6C /* LocationPermissonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissonViewController.swift; sourceTree = "<group>"; };
+		8F92AE2F290F2071007DCA6C /* LocationPermissonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissonBuilder.swift; sourceTree = "<group>"; };
+		8F92AE33290F23D0007DCA6C /* NotificationsPermissonRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissonRouter.swift; sourceTree = "<group>"; };
+		8F92AF0D290F3C28007DCA6C /* ONIXPosts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ONIXPosts.xcodeproj; path = libs/ONIXPosts/ONIXPosts.xcodeproj; sourceTree = SOURCE_ROOT; };
+		8F92AF18290F3CFA007DCA6C /* LocationPermissonRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissonRouter.swift; sourceTree = "<group>"; };
+		8FA263A2290F7C3100F4DBF1 /* ONIXEntites.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ONIXEntites.xcodeproj; path = libs/ONIXEntites/ONIXEntites.xcodeproj; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F92AC72290CDDF4007DCA6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F92AF16290F3CA7007DCA6C /* ONIXPosts.framework in Frameworks */,
+				8F92ADB7290DC4B4007DCA6C /* ONIXUIKit.framework in Frameworks */,
+				8F92ADE6290DC587007DCA6C /* ONIXAssets.framework in Frameworks */,
+				8FA263AC290F7C4300F4DBF1 /* ONIXEntites.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F92AC88290CDDF5007DCA6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F92AC92290CDDF5007DCA6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F92AC6C290CDDF4007DCA6C = {
+			isa = PBXGroup;
+			children = (
+				8F92AC77290CDDF4007DCA6C /* onixtest */,
+				8F92AC8E290CDDF5007DCA6C /* onixtestTests */,
+				8F92AC98290CDDF5007DCA6C /* onixtestUITests */,
+				8F92AC76290CDDF4007DCA6C /* Products */,
+				8F92AD51290DBCAE007DCA6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F92AC76290CDDF4007DCA6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AC75290CDDF4007DCA6C /* onixtest.app */,
+				8F92AC8B290CDDF5007DCA6C /* onixtestTests.xctest */,
+				8F92AC95290CDDF5007DCA6C /* onixtestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F92AC77290CDDF4007DCA6C /* onixtest */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ADE8290DC835007DCA6C /* Helpers */,
+				8F92AD1F290DB524007DCA6C /* libs */,
+				8F92ACC6290CE037007DCA6C /* Scenes */,
+				8F92AC78290CDDF4007DCA6C /* AppDelegate.swift */,
+				8F92AC7C290CDDF4007DCA6C /* ViewController.swift */,
+				8F92AC81290CDDF5007DCA6C /* Assets.xcassets */,
+				8F92AC83290CDDF5007DCA6C /* LaunchScreen.storyboard */,
+				8F92AC86290CDDF5007DCA6C /* Info.plist */,
+			);
+			path = onixtest;
+			sourceTree = "<group>";
+		};
+		8F92AC8E290CDDF5007DCA6C /* onixtestTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AC8F290CDDF5007DCA6C /* onixtestTests.swift */,
+			);
+			path = onixtestTests;
+			sourceTree = "<group>";
+		};
+		8F92AC98290CDDF5007DCA6C /* onixtestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AC99290CDDF5007DCA6C /* onixtestUITests.swift */,
+				8F92AC9B290CDDF5007DCA6C /* onixtestUITestsLaunchTests.swift */,
+			);
+			path = onixtestUITests;
+			sourceTree = "<group>";
+		};
+		8F92ACC6290CE037007DCA6C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ACE5290D952F007DCA6C /* PermissionCarousel */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8F92ACE5290D952F007DCA6C /* PermissionCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AE24290F1D66007DCA6C /* LocationPermisson */,
+				8F92ADEC290EDF8E007DCA6C /* NotificationsPermisson */,
+				8F92ADEB290EDF7C007DCA6C /* CameraPermisson */,
+			);
+			path = PermissionCarousel;
+			sourceTree = "<group>";
+		};
+		8F92ACE6290D9560007DCA6C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ACE7290D9588007DCA6C /* CameraPermissonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F92ACE9290D95E9007DCA6C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ACEB290D960E007DCA6C /* CameraPermisson.storyboard */,
+				8F92ACED290D964B007DCA6C /* CameraPermissonViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F92ACEA290D95F5007DCA6C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AE1F290F12FF007DCA6C /* CameraPermissonRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8F92ACEF290D9665007DCA6C /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ACF0290D9676007DCA6C /* CameraPermissonBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		8F92AD1F290DB524007DCA6C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				8FA263A2290F7C3100F4DBF1 /* ONIXEntites.xcodeproj */,
+				8F92AF0D290F3C28007DCA6C /* ONIXPosts.xcodeproj */,
+				8F92ADE0290DC57C007DCA6C /* ONIXAssets.xcodeproj */,
+				8F92ADB1290DC4AE007DCA6C /* ONIXUIKit.xcodeproj */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		8F92AD51290DBCAE007DCA6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F92ADB2290DC4AE007DCA6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ADB6290DC4AE007DCA6C /* ONIXUIKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F92ADE1290DC57C007DCA6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ADE5290DC57C007DCA6C /* ONIXAssets.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F92ADE8290DC835007DCA6C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ADE9290DC840007DCA6C /* ONIXButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8F92ADEB290EDF7C007DCA6C /* CameraPermisson */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ACEF290D9665007DCA6C /* Builder */,
+				8F92ACEA290D95F5007DCA6C /* Router */,
+				8F92ACE9290D95E9007DCA6C /* ViewController */,
+				8F92ACE6290D9560007DCA6C /* ViewModel */,
+			);
+			path = CameraPermisson;
+			sourceTree = "<group>";
+		};
+		8F92ADEC290EDF8E007DCA6C /* NotificationsPermisson */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ADF0290EE016007DCA6C /* Builder */,
+				8F92ADEF290EE010007DCA6C /* Router */,
+				8F92ADEE290EE008007DCA6C /* ViewController */,
+				8F92ADED290EE000007DCA6C /* ViewModel */,
+			);
+			path = NotificationsPermisson;
+			sourceTree = "<group>";
+		};
+		8F92ADED290EE000007DCA6C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ADF1290EE17A007DCA6C /* NotificationsPermissonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F92ADEE290EE008007DCA6C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ADF3290EE195007DCA6C /* NotificationsPermisson.storyboard */,
+				8F92ADF5290EE1A3007DCA6C /* NotificationsPermissonViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F92ADEF290EE010007DCA6C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AE33290F23D0007DCA6C /* NotificationsPermissonRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8F92ADF0290EE016007DCA6C /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				8F92ADF7290EE23C007DCA6C /* NotificationsPermissonBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		8F92AE24290F1D66007DCA6C /* LocationPermisson */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AE28290F1D90007DCA6C /* Builder */,
+				8F92AE27290F1D88007DCA6C /* Router */,
+				8F92AE26290F1D80007DCA6C /* ViewController */,
+				8F92AE25290F1D78007DCA6C /* ViewModel */,
+			);
+			path = LocationPermisson;
+			sourceTree = "<group>";
+		};
+		8F92AE25290F1D78007DCA6C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AE29290F1DBA007DCA6C /* LocationPermissonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8F92AE26290F1D80007DCA6C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AE2B290F1DC9007DCA6C /* LocationPermisson.storyboard */,
+				8F92AE2D290F1DD9007DCA6C /* LocationPermissonViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F92AE27290F1D88007DCA6C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AF18290F3CFA007DCA6C /* LocationPermissonRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8F92AE28290F1D90007DCA6C /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AE2F290F2071007DCA6C /* LocationPermissonBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		8F92AF0E290F3C28007DCA6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F92AF13290F3C28007DCA6C /* ONIXPosts.framework */,
+				8F92AF15290F3C28007DCA6C /* ONIXPostsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FA263A3290F7C3100F4DBF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FA263A8290F7C3100F4DBF1 /* ONIXEntites.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F92AC74290CDDF4007DCA6C /* onixtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F92AC9F290CDDF5007DCA6C /* Build configuration list for PBXNativeTarget "onixtest" */;
+			buildPhases = (
+				8F92AC71290CDDF4007DCA6C /* Sources */,
+				8F92AC72290CDDF4007DCA6C /* Frameworks */,
+				8F92AC73290CDDF4007DCA6C /* Resources */,
+				8F92AD55290DBCAE007DCA6C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = onixtest;
+			productName = onixtest;
+			productReference = 8F92AC75290CDDF4007DCA6C /* onixtest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F92AC8A290CDDF5007DCA6C /* onixtestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F92ACA2290CDDF5007DCA6C /* Build configuration list for PBXNativeTarget "onixtestTests" */;
+			buildPhases = (
+				8F92AC87290CDDF5007DCA6C /* Sources */,
+				8F92AC88290CDDF5007DCA6C /* Frameworks */,
+				8F92AC89290CDDF5007DCA6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F92AC8D290CDDF5007DCA6C /* PBXTargetDependency */,
+			);
+			name = onixtestTests;
+			productName = onixtestTests;
+			productReference = 8F92AC8B290CDDF5007DCA6C /* onixtestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F92AC94290CDDF5007DCA6C /* onixtestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F92ACA5290CDDF5007DCA6C /* Build configuration list for PBXNativeTarget "onixtestUITests" */;
+			buildPhases = (
+				8F92AC91290CDDF5007DCA6C /* Sources */,
+				8F92AC92290CDDF5007DCA6C /* Frameworks */,
+				8F92AC93290CDDF5007DCA6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F92AC97290CDDF5007DCA6C /* PBXTargetDependency */,
+			);
+			name = onixtestUITests;
+			productName = onixtestUITests;
+			productReference = 8F92AC95290CDDF5007DCA6C /* onixtestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F92AC6D290CDDF4007DCA6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					8F92AC74290CDDF4007DCA6C = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					8F92AC8A290CDDF5007DCA6C = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 8F92AC74290CDDF4007DCA6C;
+					};
+					8F92AC94290CDDF5007DCA6C = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 8F92AC74290CDDF4007DCA6C;
+					};
+				};
+			};
+			buildConfigurationList = 8F92AC70290CDDF4007DCA6C /* Build configuration list for PBXProject "onixtest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F92AC6C290CDDF4007DCA6C;
+			productRefGroup = 8F92AC76290CDDF4007DCA6C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8F92ADE1290DC57C007DCA6C /* Products */;
+					ProjectRef = 8F92ADE0290DC57C007DCA6C /* ONIXAssets.xcodeproj */;
+				},
+				{
+					ProductGroup = 8FA263A3290F7C3100F4DBF1 /* Products */;
+					ProjectRef = 8FA263A2290F7C3100F4DBF1 /* ONIXEntites.xcodeproj */;
+				},
+				{
+					ProductGroup = 8F92AF0E290F3C28007DCA6C /* Products */;
+					ProjectRef = 8F92AF0D290F3C28007DCA6C /* ONIXPosts.xcodeproj */;
+				},
+				{
+					ProductGroup = 8F92ADB2290DC4AE007DCA6C /* Products */;
+					ProjectRef = 8F92ADB1290DC4AE007DCA6C /* ONIXUIKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8F92AC74290CDDF4007DCA6C /* onixtest */,
+				8F92AC8A290CDDF5007DCA6C /* onixtestTests */,
+				8F92AC94290CDDF5007DCA6C /* onixtestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8F92ADB6290DC4AE007DCA6C /* ONIXUIKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ONIXUIKit.framework;
+			remoteRef = 8F92ADB5290DC4AE007DCA6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F92ADE5290DC57C007DCA6C /* ONIXAssets.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ONIXAssets.framework;
+			remoteRef = 8F92ADE4290DC57C007DCA6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F92AF13290F3C28007DCA6C /* ONIXPosts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ONIXPosts.framework;
+			remoteRef = 8F92AF12290F3C28007DCA6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8F92AF15290F3C28007DCA6C /* ONIXPostsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ONIXPostsTests.xctest;
+			remoteRef = 8F92AF14290F3C28007DCA6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8FA263A8290F7C3100F4DBF1 /* ONIXEntites.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ONIXEntites.framework;
+			remoteRef = 8FA263A7290F7C3100F4DBF1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F92AC73290CDDF4007DCA6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F92AC85290CDDF5007DCA6C /* LaunchScreen.storyboard in Resources */,
+				8F92ACEC290D960E007DCA6C /* CameraPermisson.storyboard in Resources */,
+				8F92ADF4290EE195007DCA6C /* NotificationsPermisson.storyboard in Resources */,
+				8F92AE2C290F1DC9007DCA6C /* LocationPermisson.storyboard in Resources */,
+				8F92AC82290CDDF5007DCA6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F92AC89290CDDF5007DCA6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F92AC93290CDDF5007DCA6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F92AC71290CDDF4007DCA6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F92AE30290F2071007DCA6C /* LocationPermissonBuilder.swift in Sources */,
+				8F92AE20290F12FF007DCA6C /* CameraPermissonRouter.swift in Sources */,
+				8F92ADF8290EE23C007DCA6C /* NotificationsPermissonBuilder.swift in Sources */,
+				8F92ACF1290D9676007DCA6C /* CameraPermissonBuilder.swift in Sources */,
+				8F92AE2A290F1DBA007DCA6C /* LocationPermissonViewModel.swift in Sources */,
+				8F92AE2E290F1DD9007DCA6C /* LocationPermissonViewController.swift in Sources */,
+				8F92AC7D290CDDF4007DCA6C /* ViewController.swift in Sources */,
+				8F92ACE8290D9588007DCA6C /* CameraPermissonViewModel.swift in Sources */,
+				8F92ADEA290DC840007DCA6C /* ONIXButton.swift in Sources */,
+				8F92ACEE290D964B007DCA6C /* CameraPermissonViewController.swift in Sources */,
+				8F92AE34290F23D0007DCA6C /* NotificationsPermissonRouter.swift in Sources */,
+				8F92AF19290F3CFA007DCA6C /* LocationPermissonRouter.swift in Sources */,
+				8F92AC79290CDDF4007DCA6C /* AppDelegate.swift in Sources */,
+				8F92ADF6290EE1A3007DCA6C /* NotificationsPermissonViewController.swift in Sources */,
+				8F92ADF2290EE17A007DCA6C /* NotificationsPermissonViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F92AC87290CDDF5007DCA6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F92AC90290CDDF5007DCA6C /* onixtestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F92AC91290CDDF5007DCA6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F92AC9C290CDDF5007DCA6C /* onixtestUITestsLaunchTests.swift in Sources */,
+				8F92AC9A290CDDF5007DCA6C /* onixtestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F92AC8D290CDDF5007DCA6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F92AC74290CDDF4007DCA6C /* onixtest */;
+			targetProxy = 8F92AC8C290CDDF5007DCA6C /* PBXContainerItemProxy */;
+		};
+		8F92AC97290CDDF5007DCA6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F92AC74290CDDF4007DCA6C /* onixtest */;
+			targetProxy = 8F92AC96290CDDF5007DCA6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F92AC83290CDDF5007DCA6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F92AC84290CDDF5007DCA6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F92AC9D290CDDF5007DCA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F92AC9E290CDDF5007DCA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F92ACA0290CDDF5007DCA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = onixtest/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Esta app precisa acceso a tu camara para poder escanear.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = CameraPermisson;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jonathan.onixtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F92ACA1290CDDF5007DCA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = onixtest/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Esta app precisa acceso a tu camara para poder escanear.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = CameraPermisson;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jonathan.onixtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F92ACA3290CDDF5007DCA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jonathan.onixtestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/onixtest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/onixtest";
+			};
+			name = Debug;
+		};
+		8F92ACA4290CDDF5007DCA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jonathan.onixtestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/onixtest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/onixtest";
+			};
+			name = Release;
+		};
+		8F92ACA6290CDDF5007DCA6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jonathan.onixtestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = onixtest;
+			};
+			name = Debug;
+		};
+		8F92ACA7290CDDF5007DCA6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jonathan.onixtestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = onixtest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F92AC70290CDDF4007DCA6C /* Build configuration list for PBXProject "onixtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F92AC9D290CDDF5007DCA6C /* Debug */,
+				8F92AC9E290CDDF5007DCA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F92AC9F290CDDF5007DCA6C /* Build configuration list for PBXNativeTarget "onixtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F92ACA0290CDDF5007DCA6C /* Debug */,
+				8F92ACA1290CDDF5007DCA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F92ACA2290CDDF5007DCA6C /* Build configuration list for PBXNativeTarget "onixtestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F92ACA3290CDDF5007DCA6C /* Debug */,
+				8F92ACA4290CDDF5007DCA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F92ACA5290CDDF5007DCA6C /* Build configuration list for PBXNativeTarget "onixtestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F92ACA6290CDDF5007DCA6C /* Debug */,
+				8F92ACA7290CDDF5007DCA6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F92AC6D290CDDF4007DCA6C /* Project object */;
+}
