@@ -19,6 +19,8 @@
 		8FA263B3290F876D00F4DBF1 /* ExtensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA263B2290F876D00F4DBF1 /* ExtensionImage.swift */; };
 		8FA263B5290F8F5100F4DBF1 /* ONIXAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA263B4290F8F5100F4DBF1 /* ONIXAssets.framework */; };
 		8FA263B6290F8F5100F4DBF1 /* ONIXAssets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA263B4290F8F5100F4DBF1 /* ONIXAssets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FA263B92910560000F4DBF1 /* NoSerchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA263B82910560000F4DBF1 /* NoSerchResultView.swift */; };
+		8FA263BB2910560D00F4DBF1 /* NoSearchResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA263BA2910560D00F4DBF1 /* NoSearchResultView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +50,8 @@
 		8F92AF1D290F4CDF007DCA6C /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		8FA263B2290F876D00F4DBF1 /* ExtensionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImage.swift; sourceTree = "<group>"; };
 		8FA263B4290F8F5100F4DBF1 /* ONIXAssets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ONIXAssets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA263B82910560000F4DBF1 /* NoSerchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoSerchResultView.swift; sourceTree = "<group>"; };
+		8FA263BA2910560D00F4DBF1 /* NoSearchResultView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoSearchResultView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 			children = (
 				8F92ADFA290EE322007DCA6C /* CarouselPermissonView.xib */,
 				8F92ADFC290EE340007DCA6C /* CarouselPermissonView.swift */,
+				8FA263B82910560000F4DBF1 /* NoSerchResultView.swift */,
+				8FA263BA2910560D00F4DBF1 /* NoSearchResultView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F92ADFB290EE322007DCA6C /* CarouselPermissonView.xib in Resources */,
+				8FA263BB2910560D00F4DBF1 /* NoSearchResultView.xib in Resources */,
 				8F92AF1F290F4CDF007DCA6C /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +256,7 @@
 				8F92AE23290F1352007DCA6C /* Router.swift in Sources */,
 				8F92AD80290DBE5B007DCA6C /* ONIXButton.swift in Sources */,
 				8F92AE1D290EF3C6007DCA6C /* Utils.swift in Sources */,
+				8FA263B92910560000F4DBF1 /* NoSerchResultView.swift in Sources */,
 				8F92AF1E290F4CDF007DCA6C /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

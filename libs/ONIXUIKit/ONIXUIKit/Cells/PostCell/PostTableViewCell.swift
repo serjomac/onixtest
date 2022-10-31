@@ -20,6 +20,7 @@ public class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var commentImageView: UIImageView!
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var comentsCountLabel: UILabel!
+    @IBOutlet weak var likeCountLabel: UILabel!
     
     
     // MARK: - PROPIEDADES
@@ -49,11 +50,12 @@ public class PostTableViewCell: UITableViewCell {
         postImageVew.layer.cornerRadius = 10.0
     }
     
-    public func setupCell(postName: String, postDescription: String, authorName: String, urlImage: String, commentsCount: String) {
+    public func setupCell(postName: String, postDescription: String, authorName: String, urlImage: String, commentsCount: String, likeCount: String) {
         self.postName.text = postName
         postDescriptionLabel.text = postName
         authorNameLabel.text = authorName
         comentsCountLabel.text = commentsCount
+        likeCountLabel.text = likeCount
         postImage.image = .postPlaceholderImage
         //postImage.loadFrom(URLAddress: urlImage)
     }

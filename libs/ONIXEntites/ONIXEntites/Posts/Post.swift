@@ -40,6 +40,7 @@ public struct PostData: Codable {
     public let hidden: Bool?
     public let urlImage: String
     public let commentsCount: Int?
+    public let score: Int?
 
     enum CodingKeys: String, CodingKey {
         case subreddit
@@ -48,5 +49,6 @@ public struct PostData: Codable {
         case saved, title, hidden
         case urlImage = "url"
         case commentsCount = "num_comments"
+        case score
     }
 }

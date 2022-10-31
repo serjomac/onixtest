@@ -21,6 +21,7 @@
 		8F92AF23290F5586007DCA6C /* ONIXUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F92AF21290F5586007DCA6C /* ONIXUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FA263AF290F7C4F00F4DBF1 /* ONIXEntites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA263AE290F7C4F00F4DBF1 /* ONIXEntites.framework */; };
 		8FA263B0290F7C4F00F4DBF1 /* ONIXEntites.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA263AE290F7C4F00F4DBF1 /* ONIXEntites.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FA263C72910690F00F4DBF1 /* RepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA263C62910690F00F4DBF1 /* RepositoryManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		8F92AF02290F392D007DCA6C /* PostsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsConfigurator.swift; sourceTree = "<group>"; };
 		8F92AF21290F5586007DCA6C /* ONIXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ONIXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA263AE290F7C4F00F4DBF1 /* ONIXEntites.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ONIXEntites.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA263C62910690F00F4DBF1 /* RepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		8F92AEBD290F382C007DCA6C /* ONIXPosts */ = {
 			isa = PBXGroup;
 			children = (
+				8FA263C52910690300F4DBF1 /* Repository */,
 				8F92AEF3290F3871007DCA6C /* Source */,
 				8F92AEBE290F382C007DCA6C /* ONIXPosts.h */,
 				8F92AEBF290F382C007DCA6C /* ONIXPosts.docc */,
@@ -166,6 +169,14 @@
 				8F92AF21290F5586007DCA6C /* ONIXUIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FA263C52910690300F4DBF1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8FA263C62910690F00F4DBF1 /* RepositoryManager.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FA263C72910690F00F4DBF1 /* RepositoryManager.swift in Sources */,
 				8F92AF03290F392D007DCA6C /* PostsConfigurator.swift in Sources */,
 				8F92AEFF290F3914007DCA6C /* PostsInteractor.swift in Sources */,
 				8F92AEFB290F38F1007DCA6C /* PostsViewController.swift in Sources */,

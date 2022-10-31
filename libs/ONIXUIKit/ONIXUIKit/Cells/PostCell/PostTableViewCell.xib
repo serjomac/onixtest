@@ -147,6 +147,7 @@
                 <outlet property="authorNameLabel" destination="tsq-Lo-rBy" id="d5s-NO-oqd"/>
                 <outlet property="comentsCountLabel" destination="bOc-Xz-bT7" id="Xl1-Nk-IbR"/>
                 <outlet property="commentImageView" destination="vfL-4C-V6i" id="JP2-xK-Ty3"/>
+                <outlet property="likeCountLabel" destination="DoS-Oh-PQ0" id="pdb-a1-4Gt"/>
                 <outlet property="likeImageView" destination="CSC-2y-t56" id="ieM-o5-cbF"/>
                 <outlet property="postDescriptionLabel" destination="Wd5-f2-8Fo" id="5X8-F5-Y6d"/>
                 <outlet property="postImage" destination="TP6-9v-PFR" id="mMZ-vh-OvK"/>

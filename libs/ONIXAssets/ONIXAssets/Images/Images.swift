@@ -20,6 +20,9 @@ public extension UIImage {
     static var postPlaceholderImage: UIImage {
         .imageFromLocalBundle(named: "post_image")
     }
+    static var noSearchResult: UIImage {
+        .imageFromLocalBundle(named: "no_search_result")
+    }
 }
 
 public extension UIColor {

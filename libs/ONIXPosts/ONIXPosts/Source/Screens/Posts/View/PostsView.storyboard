@@ -17,10 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ORq-1p-rud">
-                                <rect key="frame" x="0.0" y="118" width="390" height="692"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-dE-ge3">
+                                <rect key="frame" x="0.0" y="113" width="390" height="697"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ORq-1p-rud">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="697"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ORq-1p-rud" secondAttribute="trailing" id="5lb-qP-mYv"/>
+                                    <constraint firstItem="ORq-1p-rud" firstAttribute="top" secondItem="Owa-dE-ge3" secondAttribute="top" id="BoM-xy-tcC"/>
+                                    <constraint firstAttribute="bottom" secondItem="ORq-1p-rud" secondAttribute="bottom" id="Dkd-GT-F06"/>
+                                    <constraint firstItem="ORq-1p-rud" firstAttribute="leading" secondItem="Owa-dE-ge3" secondAttribute="leading" id="QqN-Cp-mAV"/>
+                                </constraints>
+                            </view>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="8n8-3K-PAs">
                                 <rect key="frame" x="0.0" y="57" width="390" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -33,17 +45,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8n8-3K-PAs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="25j-iX-uLG"/>
-                            <constraint firstItem="ORq-1p-rud" firstAttribute="top" secondItem="8n8-3K-PAs" secondAttribute="bottom" constant="5" id="3FL-p3-a7r"/>
-                            <constraint firstItem="ORq-1p-rud" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="7vi-sg-IKK"/>
                             <constraint firstItem="8n8-3K-PAs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Bvy-rS-CBK"/>
-                            <constraint firstItem="ORq-1p-rud" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Z6V-jw-9Wg"/>
-                            <constraint firstItem="ORq-1p-rud" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="srr-eM-nMy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Owa-dE-ge3" secondAttribute="bottom" id="Vy4-UE-6K8"/>
+                            <constraint firstItem="Owa-dE-ge3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="erg-be-OV2"/>
+                            <constraint firstItem="Owa-dE-ge3" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="fPj-j4-Mts"/>
                             <constraint firstItem="8n8-3K-PAs" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tsE-CC-Gjt"/>
+                            <constraint firstItem="Owa-dE-ge3" firstAttribute="top" secondItem="8n8-3K-PAs" secondAttribute="bottom" id="wno-GI-2vz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="8n8-3K-PAs" id="xHw-L1-3fM"/>
                         <outlet property="tableView" destination="ORq-1p-rud" id="x5L-AM-GA3"/>
+                        <outlet property="viewContent" destination="Owa-dE-ge3" id="aFb-wm-i0C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
